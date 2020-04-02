@@ -1,0 +1,19 @@
+<div><b>id:</b>     {{userDetail.id}}</div>
+<div><b>name:</b>   {{userDetail.name}}</div>
+<div><b>UserName:</b>   {{userDetail.username}}</div>
+<div><b>Email:</b>      {{userDetail.email}}</div>
+<!-- Address: {{userDetail.address.street}}<br/>
+{{userDetail.address.suite}}<br/>
+{{userDetail.address.city}}<br/>
+{{userDetail.address.zipcode}}<br/>
+{{userDetail.address.geo.lat}}<br/>
+{{userDetail.address.geo.lng}}<br/> -->
+<div><b>Phone:</b>  {{userDetail.phone}}</div>
+<div><b>Website:</b>  {{userDetail.website}}</div>
+<!-- Company:    {{userDetail.company.name}}<br/>
+{{userDetail.company.catchPhrase}}<br/>
+{{userDetail.company.bs}}<br/> -->
+
+
+<app-address [addr]="userDetail.address"></app-address>
+<app-company [comp]="userDetail.company"></app-company>
